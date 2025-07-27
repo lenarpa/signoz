@@ -36,6 +36,8 @@ services:
     command: syslog+tcp://otel-agent:2255
     depends_on:
       - otel-agent
+    networks:
+      - dokploy-network
 
 networks:
   signoz-net:
