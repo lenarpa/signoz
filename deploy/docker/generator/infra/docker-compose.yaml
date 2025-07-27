@@ -40,6 +40,6 @@ services:
       - dokploy-network
 
 networks:
-  signoz-net:
+  dokploy-network:
     name: dokploy-network
     external: true
