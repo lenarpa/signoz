@@ -1,7 +1,7 @@
 version: "3"
 x-common: &common
   networks:
-    - signoz-net
+    - dokploy-network
   extra_hosts:
     - host.docker.internal:host-gateway
   logging:
@@ -39,5 +39,5 @@ services:
 
 networks:
   signoz-net:
-    name: signoz-net
+    name: dokploy-network
     external: true
